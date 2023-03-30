@@ -17,6 +17,7 @@ public class FilmManagerTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void findAllOverLimitFirstManagerTest() {
         FilmManager manager = new FilmManager();
@@ -40,6 +41,7 @@ public class FilmManagerTest {
         Assertions.assertArrayEquals(expected, actual);
 
     }
+
     @Test
     public void findAllUnderLimitFirstManagerTest() {
         FilmManager manager = new FilmManager();
@@ -59,6 +61,7 @@ public class FilmManagerTest {
         Assertions.assertArrayEquals(expected, actual);
 
     }
+
     @Test
     public void addFilmSecondManagerTest() {
         FilmManager manager = new FilmManager(5);
@@ -72,6 +75,7 @@ public class FilmManagerTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void findAllOverLimitSecondManagerTest() {
         FilmManager manager = new FilmManager(8);
@@ -95,6 +99,7 @@ public class FilmManagerTest {
         Assertions.assertArrayEquals(expected, actual);
 
     }
+
     @Test
     public void findAllUnderLimitSecondManagerTest() {
         FilmManager manager = new FilmManager(8);
